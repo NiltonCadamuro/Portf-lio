@@ -16,9 +16,19 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
   return (
     <html lang="pt-br">
-      <Script src="js/scrollmagic/uncompressed/ScrollMagic.js"></Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-YE8YRDQ4XE"></Script>
+      <Script id="google-analytics" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-YE8YRDQ4XE');
+        `}
+      </Script>
+
       <ModeProvider>
         <body className={`${heebo.className}`}>{children}</body>
       </ModeProvider>
