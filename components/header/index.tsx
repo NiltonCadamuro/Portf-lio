@@ -7,7 +7,7 @@ import Container from "../BasicComponents/Container";
 
 const Header = () => {
   return (
-    <header className="w-full h-[64px] lg:h-[80px] flex items-center bg-surfaceBackground px-5 shadow-lg lg:px-20 justify-between sticky top-0 left-0 z-20">
+    <header className="w-full h-[64px] lg:h-[80px] flex items-center bg-surfaceBackground px-5 shadow-lg lg:px-20 justify-between sticky top-0 left-0 z-50">
       <Container>
         <div className="flex items-center justify-between">
           <Logo />

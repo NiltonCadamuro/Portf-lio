@@ -8,8 +8,8 @@ import SocialMedias from "../BasicComponents/SocialMedias";
 
 const FirstContent = () => {
   return (
-    <section id="inicio" className="w-full px-6">
-      <div className="flex flex-col lg:flex-row-reverse justify-between items-center max-w-[1220px] mx-auto w-full lg:mt-24 mt-12">
+    <section id="inicio" className="w-full px-6 lg:h-[90vh] relative pb-12 lg:pb-0">
+      <div className="flex flex-col lg:flex-row-reverse justify-between items-center max-w-[1220px] mx-auto w-full lg:pt-24 pt-12">
         <div className="relative max-w-[500px] w-full aspect-square flex-1 mb-6 lg:mb-0">
           <Image
             className="absolute top-0 left-0 z-10"
@@ -58,6 +58,16 @@ const FirstContent = () => {
           </div>
         </div>
       </div>
+      <Image
+        className="absolute -bottom-12 lg:bottom-0 left-[60%] arrow-animation z-30"
+        src="/arrow.svg"
+        alt="Icone de seta para baixo"
+        width={121}
+        height={34}
+        priority
+        loading="eager"
+      />
+      <div className="hidden lg:block w-full max-w-[300px] aspect-square bg-[#C7FAD6] radius-2-animation absolute left-6 -bottom-[170px] glow z-10"></div>
     </section>
   );
 }

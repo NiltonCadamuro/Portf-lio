@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import { IconObj } from "../../Button/types";
 import Text from "../../Text";
@@ -6,6 +8,7 @@ const IconTech = ({ icon, name }: {
   icon: IconObj;
   name: string;
 }) => {
+
   return (
     <div className="relative group w-fit">
       <Image
@@ -18,7 +21,7 @@ const IconTech = ({ icon, name }: {
         loading="eager"
       />
       <div className="absolute -top-12 opacity-0 border border-textTertiary group-hover:opacity-100 transition-all p-2 rounded-lg hover:!opacity-0">
-        <Text className="!text-textTertiary">{name}</Text>
+        <Text className="!text-textTertiary w-max">{name}</Text>
         <div className="w-2 h-2 border-b border-r bg-surfacePrimary border-textTertiary absolute -bottom-1 left-2 rotate-45"></div>
       </div>
     </div>
